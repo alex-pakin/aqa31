@@ -122,7 +122,7 @@ public class DebetCardTest {
         form.$("[data-test-id=phone] input").setValue("");
         form.$("[data-test-id=agreement]").click();
         form.$("[role=button]").click();
-        $("[data-test-id='name'].input_invalid .input__sub").shouldHave(Condition.exactText("Поле "
+        $("[data-test-id='phone'].input_invalid .input__sub").shouldHave(Condition.exactText("Поле "
                 + "обязательно для заполнения"));
     }
 
